@@ -1,0 +1,29 @@
+.about {
+  &__title {
+    @extend %section-title;
+  }
+
+  &__features {
+    @include grid-container(2, 3, 1fr, 1fr, 6rem, 2rem);
+  }
+
+  &__item {
+    @include flex-container(row, flex-start, flex-start, 1rem);
+
+    &-title {
+      @include media-title($color_gray_1);
+    }
+
+    &-description {
+      @include media-description($color_gray_2);
+    }
+
+    &-icon {
+      margin-top: 9px;
+
+      svg {
+        @include svg();
+      }
+    }
+  }
+}

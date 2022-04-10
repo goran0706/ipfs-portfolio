@@ -1,0 +1,24 @@
+@import "abstracts/fonts";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+
+@import "vendors/normalize";
+
+@import "base/reset";
+@import "base/typography";
+
+@import "layout/navigation";
+@import "layout/header";
+@import "layout/section-about";
+@import "layout/section-portfolio";
+@import "layout/section-skills";
+@import "layout/section-contact";
+@import "layout/footer";
+@import "layout/forms";
+
+@import "components/cards";
+@import "components/buttons";
+@import "components/socials";
+
+@import "themes/theme";

@@ -1,0 +1,55 @@
+.header {
+  @include flex-container();
+
+  &__content {
+    @include flex-container(column, center, flex-start);
+    row-gap: 1rem;
+    z-index: 1;
+  }
+
+  &__title {
+    color: $color_text_primary;
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 76px;
+    margin: 0;
+
+    &--shadowed {
+      color: $color_text_primary;
+      font-size: 120px;
+      font-weight: 700;
+      left: 325px;
+      letter-spacing: -15px;
+      opacity: 0.04;
+      position: absolute;
+      top: 182px;
+    }
+  }
+
+  &__description {
+    color: $color_gray_3;
+    font-size: 1.618rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  &__buttons {
+    @include flex-container();
+    gap: 1rem;
+    margin: 2rem 0 0.5rem;
+  }
+
+  &__img {
+    @extend %border-radius-circle;
+    @extend %box-shadow-hero;
+    @include flex-container(row, center, center);
+    border: 10px solid $color_gray_2;
+    flex-shrink: 0;
+    height: 550px;
+    overflow: hidden;
+    width: 550px;
+  }
+}

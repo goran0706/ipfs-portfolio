@@ -1,0 +1,28 @@
+.socials__list {
+  @include flex-container();
+  gap: 0.5rem;
+
+  .socials__item {
+    @extend %border-radius-small;
+    @include flex-container(row, center, center);
+    background-color: $color_gray_2;
+    height: 32px;
+    transition: $transition;
+    width: 32px;
+
+    svg {
+      @include svg($color_gray_1, 18px, 18px);
+    }
+
+    &:hover {
+      @extend %box-shadow;
+      background-color: $color_text_primary;
+      cursor: pointer;
+      transition: $transition;
+
+      svg {
+        @include svg($color_blue, 18px, 18px);
+      }
+    }
+  }
+}

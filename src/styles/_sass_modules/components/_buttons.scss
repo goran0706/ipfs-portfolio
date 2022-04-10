@@ -1,0 +1,26 @@
+button {
+  @extend %border-radius-small;
+  @include flex-container(row, center, center);
+  align-self: flex-end;
+  background: $color_bg_primary;
+  border: 2px solid $color_blue;
+  color: $color_text_primary;
+  font-size: 16px;
+  font-weight: 400;
+  height: 42px;
+  line-height: 24px;
+  padding: 16px 32px;
+  transition: $transition;
+  width: 212px;
+
+  &:hover {
+    background-color: $color_blue;
+    cursor: pointer;
+    transition: $transition;
+  }
+
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
+  }
+}

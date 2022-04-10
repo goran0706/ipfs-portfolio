@@ -1,0 +1,20 @@
+.footer {
+  background-color: $color_bg_primary;
+  @include flex-container(column, center, center);
+
+  &__title {
+    color: $color_text_primary;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    color: $color_text_secondary;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+  }
+}

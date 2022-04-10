@@ -1,0 +1,45 @@
+.skills {
+  &__title {
+    @extend %section-title;
+    color: $color_text_primary;
+  }
+
+  &__wrapper {
+    @include flex-container();
+    margin-bottom: 3rem;
+  }
+
+  &__icons {
+    @include flex-container(row, flex-start, center, 3rem);
+    flex: 1;
+
+    span {
+      @extend %border-radius-circle;
+      @extend %skills-icon-wrapper;
+      @include flex-container(row, center, center);
+    }
+  }
+}
+
+.experience {
+  @include flex-container(row, center, center, 1rem);
+  flex: 1;
+
+  &__icon-wrapper {
+    @extend %border-radius-small;
+    @extend %skills-icon-wrapper;
+    @include flex-container(row, center, center);
+  }
+
+  &__content {
+    @include flex-container(column, flex-start, flex-start, 1rem);
+  }
+
+  &__title {
+    @include media-title($color_text_primary);
+  }
+
+  &__description {
+    @include media-description($color_text_secondary);
+  }
+}
