@@ -1,10 +1,9 @@
 export const data = {
   titlePartOne: "Blockchain &",
   titlePartTwo: "Web Developer",
-  titleShadow: "Web 3.0",
   descPartOne:
-    "Quisque lorem eros, ultrices commodo tortor ut, cursus venenatis elit. Morbi aliquam",
+    "Hello, I'm a blockchain and web developer who loves fresh ideas.",
   descPartTwo:
-    "aliquam malesuada. Pellentesque id mauris porttitor, cursus libero sit.",
+    "Please take a tour of my life as a developer and explore my works.",
   btnText: "Download CV",
 };

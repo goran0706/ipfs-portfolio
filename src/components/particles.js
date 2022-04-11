@@ -67,7 +67,7 @@ export default function Particle() {
             value: 0.5,
           },
           shape: {
-            type: "circle",
+            type: "square",
           },
           size: {
             random: true,

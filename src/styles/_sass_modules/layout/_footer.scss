@@ -1,6 +1,7 @@
 .footer {
-  background-color: $color_bg_primary;
   @include flex-container(column, center, center);
+  background-color: $color_bg_primary;
+  height: 10rem;
 
   &__title {
     color: $color_text_primary;

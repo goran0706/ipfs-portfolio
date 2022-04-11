@@ -17,6 +17,10 @@ a {
   box-sizing: border-box;
 }
 
+img, svg {
+  pointer-events: none;
+}
+
 .container {
   @include container(80rem);
 }

@@ -1,17 +1,20 @@
 import { images } from "../../constants";
 
 const {
-  ruby,
+  blockchain,
+  eth,
+  angular,
   cucumber,
-  selenium,
   figma,
   git,
-  angular,
-  react,
+  mongo,
   nextjs,
   nodejs,
-  mongo,
   psql,
+  react,
+  ruby,
+  selenium,
+  sol
 } = images;
 
 export const data = {
@@ -24,17 +27,17 @@ export const data = {
     },
     {
       icons: [figma, git, angular, react, nextjs],
-      expTitle: "QA / Automation Tester",
+      expTitle: "Frontend Developer",
       expCompany: "Company / ",
     },
     {
       icons: [nodejs, mongo, psql],
-      expTitle: "QA / Automation Tester",
+      expTitle: "Backend Developer",
       expCompany: "Company / ",
     },
     {
-      icons: [figma, git, angular],
-      expTitle: "QA / Automation Tester",
+      icons: [blockchain, eth, sol],
+      expTitle: "Blockchain Developer",
       expCompany: "Company / ",
     },
   ],

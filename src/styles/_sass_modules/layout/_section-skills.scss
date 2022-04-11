@@ -22,7 +22,7 @@
 }
 
 .experience {
-  @include flex-container(row, center, center, 1rem);
+  @include flex-container(row, flex-start, center, 1rem);
   flex: 1;
 
   &__icon-wrapper {
