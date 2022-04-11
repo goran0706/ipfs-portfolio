@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <h6 className="footer__title">
-        &copy; {data.footertitle} - {year}
+        &copy; {data.title} - {year}
       </h6>
     </footer>
   );
