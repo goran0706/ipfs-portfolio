@@ -1,17 +1,18 @@
 import { data } from "./contact.data";
+import { RiMailSendFill } from "react-icons/ri";
 
 const {
-  title,
+  buttonText,
+  email,
+  helpEmail,
+  helpName,
+  helpTextarea,
+  labelEmail,
+  labelName,
+  labelTextarea,
   subtitle,
   text,
-  email,
-  labelName,
-  helpName,
-  labelEmail,
-  helpEmail,
-  labelTextarea,
-  helpTextarea,
-  buttonText,
+  title,
 } = data;
 
 export default function Skills() {
@@ -63,7 +64,10 @@ export default function Skills() {
               />
               <span className="input-group__help">{helpTextarea}</span>
             </div>
-            <button type="submit">{buttonText}</button>
+            <button type="submit">
+              {buttonText}
+              <RiMailSendFill />
+            </button>
           </form>
         </div>
       </div>

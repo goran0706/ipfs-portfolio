@@ -18,7 +18,7 @@ export default function Navbar() {
               to={path}
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-75}
               duration={500}
             >
               {label}

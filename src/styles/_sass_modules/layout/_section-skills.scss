@@ -1,7 +1,12 @@
+#skills {
+  background-color: $color_bg_secondary;
+}
+
 .skills {
+  background-color: $color_bg_secondary;
+
   &__title {
     @extend %section-title;
-    color: $color_text_primary;
   }
 
   &__wrapper {
@@ -36,10 +41,10 @@
   }
 
   &__title {
-    @include media-title($color_text_primary);
+    @include media-title($color_gray_1);
   }
 
   &__description {
-    @include media-description($color_text_secondary);
+    @include media-description($color_gray_2);
   }
 }

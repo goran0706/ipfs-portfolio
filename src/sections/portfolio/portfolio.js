@@ -2,11 +2,14 @@ import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { data } from "./portfolio.data";
 
-const { title, badgeLabels, projects } = data;
+const { title, badgeLabels, projects, btnViewMore } = data;
 
 export default function Portfolio() {
   return (
-    <section className="section section--padding section--dark" id="portfolio">
+    <section
+      className="section section--wave section--padding section--dark"
+      id="portfolio"
+    >
       <div className="portfolio container">
         <h2 className="portfolio__title">{title}</h2>
         <div className="portfolio__badges">
@@ -38,6 +41,10 @@ export default function Portfolio() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="view-more">
+          <button className="btn--outline">{btnViewMore}</button>
         </div>
       </div>
     </section>

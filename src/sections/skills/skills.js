@@ -5,10 +5,13 @@ const { title, skills } = data;
 
 export default function Skills() {
   return (
-    <section className="section section--padding section--dark" id="skills">
+    <section
+      className="section section--skills section--padding section--dark"
+      id="skills"
+    >
       <div className="skills container">
         <h2 className="skills__title">{title}</h2>
-        {skills.map(({ icons, expTitle, expCompany }, i) => (
+        {skills.map(({ icons, year, expTitle, expCompany }, i) => (
           <div className="skills__wrapper" key={i}>
             <div className="skills__icons">
               {icons.map((icon, i) => (
@@ -16,8 +19,8 @@ export default function Skills() {
                   <Image
                     src={icon}
                     alt="hero img"
-                    width="48px"
-                    height="48px"
+                    width="32px"
+                    height="32px"
                     layout="intrinsic"
                   />
                 </span>
@@ -25,7 +28,7 @@ export default function Skills() {
             </div>
             <div className="experience">
               <span className="experience__icon-wrapper">
-                <p>2018</p>
+                <p>{year}</p>
               </span>
               <div className="experience__content">
                 <h4 className="experience__title">{expTitle}</h4>

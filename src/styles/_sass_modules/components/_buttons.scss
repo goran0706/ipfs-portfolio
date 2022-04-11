@@ -1,26 +1,48 @@
 button {
   @extend %border-radius-small;
-  @include flex-container(row, center, center);
+  @include flex-container(row, center, center, 0.5rem);
   align-self: flex-end;
-  background: $color_bg_primary;
+  background-color: $color_blue;
   border: 2px solid $color_blue;
+  box-shadow: 1px 1px 12px 0 rgb(0 0 0 / 27%);
   color: $color_text_primary;
-  font-size: 16px;
-  font-weight: 400;
-  height: 42px;
-  line-height: 24px;
-  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 24px;
   transition: $transition;
-  width: 212px;
+
+  svg {
+    transition: $transition;
+  }
 
   &:hover {
-    background-color: $color_blue;
+    background: transparent;
     cursor: pointer;
     transition: $transition;
+
+    svg {
+      transform: translateX(5px);
+      transition: $transition;
+    }
   }
 
   &:disabled,
   &.disabled {
     pointer-events: none;
+  }
+}
+
+.btn--outline {
+  background-color: transparent;
+
+  &:hover {
+    background: $color_blue;
+    cursor: pointer;
+    transition: $transition;
+
+    svg {
+      transform: translateX(5px);
+      transition: $transition;
+    }
   }
 }

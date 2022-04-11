@@ -1,22 +1,20 @@
-import Image from "next/image";
-import { Particles, Socials } from "../../components";
-import { images } from "../../constants";
 import { data } from "./header.data";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { images } from "../../constants";
+import { Particles, Socials } from "../../components";
+import Image from "next/image";
 
-const {
-  titlePartOne,
-  titlePartTwo,
-  descPartOne,
-  descPartTwo,
-  btnText,
-} = data;
+const { titlePartOne, titlePartTwo, descPartOne, descPartTwo, btnText } = data;
 
 export default function Header() {
   return (
-    <section className="section--padding section--wave section--dark" id="home">
+    <section
+      className="section--header section--padding section--wave section--dark"
+      id="home"
+    >
       <Particles />
       <div className="header container ">
-        <div className='banner'>
+        <div className="banner">
           <div className="banner__content">
             <h1 className="banner__title">
               {titlePartOne}
@@ -29,18 +27,34 @@ export default function Header() {
               {descPartTwo}
             </p>
             <div className="banner__buttons">
-              <button>{btnText}</button>
+              <button>
+                {btnText}
+                <FaLongArrowAltRight />
+              </button>
               <Socials />
             </div>
           </div>
           <div className="banner__img">
-            <Image src={images.hero} alt="hero img" layout="fill" priority={false}/>
+            <Image
+              src={images.hero}
+              alt="hero img"
+              layout="fill"
+              priority={false}
+            />
           </div>
         </div>
         <span className="header__shadowed-text">
           <Image src={images.web3} alt="web 3 styled text" layout="intrinsic" />
-          <Image src={images.ethereum} alt="Ethereum styled text" layout="intrinsic" />
-          <Image src={images.solidity} alt="Solidity styled text" layout="intrinsic" />
+          <Image
+            src={images.ethereum}
+            alt="Ethereum styled text"
+            layout="intrinsic"
+          />
+          <Image
+            src={images.solidity}
+            alt="Solidity styled text"
+            layout="intrinsic"
+          />
           <Image src={images.nft} alt="NFT styled text" layout="intrinsic" />
         </span>
       </div>

@@ -33,4 +33,5 @@ export const data = {
       subtitle: "UI/UX",
     },
   ],
+  btnViewMore: "View More",
 };

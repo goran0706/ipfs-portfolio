@@ -43,9 +43,11 @@
 @mixin media-description($color: $color_text_primary, $textAlign: justify) {
   color: $color;
   font-size: 1rem;
-  font-weight: 500;
-  line-height: 24px;
+  font-weight: 300;
+  line-height: 26px;
   text-align: $textAlign;
+  text-align: left;
+  text-shadow: 1px 1px 3px rgb(0 0 0 / 22%);
 }
 
 @mixin svg($color: $color_blue, $w: 48px, $h: 48px) {

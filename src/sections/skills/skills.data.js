@@ -14,7 +14,7 @@ const {
   react,
   ruby,
   selenium,
-  sol
+  sol,
 } = images;
 
 export const data = {
@@ -22,21 +22,25 @@ export const data = {
   skills: [
     {
       icons: [ruby, cucumber, selenium],
+      year: "2018",
       expTitle: "QA / Automation Tester",
       expCompany: "Company / ",
     },
     {
       icons: [figma, git, angular, react, nextjs],
+      year: "2018",
       expTitle: "Frontend Developer",
       expCompany: "Company / ",
     },
     {
       icons: [nodejs, mongo, psql],
+      year: "2018",
       expTitle: "Backend Developer",
       expCompany: "Company / ",
     },
     {
       icons: [blockchain, eth, sol],
+      year: "2018",
       expTitle: "Blockchain Developer",
       expCompany: "Company / ",
     },
