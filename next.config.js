@@ -15,6 +15,7 @@ const nextConfig = {
 		contentSecurityPolicy:
 			"default-src 'self'; script-src 'none'; sandbox;",
 		minimumCacheTTL: 60,
+		loader: "custom",
 	},
 	compilerOptions: {
 		baseURL: "src",
