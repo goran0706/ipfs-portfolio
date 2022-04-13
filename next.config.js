@@ -10,7 +10,11 @@ const nextConfig = {
 	},
 	images: {
 		domains: ["assets"],
-		formats: ["image/png", "image/svg"],
+		formats: ["image/avif", "image/webp"],
+		dangerouslyAllowSVG: true,
+		contentSecurityPolicy:
+			"default-src 'self'; script-src 'none'; sandbox;",
+		minimumCacheTTL: 60,
 	},
 	compilerOptions: {
 		baseURL: "src",
