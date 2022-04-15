@@ -1,68 +1,75 @@
 %border-radius-small {
-  border-radius: 5px;
+	border-radius: 5px;
 }
 
 %border-radius-large {
-  border-radius: 15px;
+	border-radius: 15px;
 }
 
 %border-radius-circle {
-  border-radius: 50px;
+	border-radius: 50px;
 }
 
 %box-shadow {
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 %box-shadow-hero {
-  filter: drop-shadow(0px 0px 20px #000000);
+	filter: drop-shadow(0px 0px 20px $color_blue);
 }
 
 %unstyled-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 %styled-link {
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 24px;
-  text-align: justify;
-  color: $color_gray_3;
-  text-decoration: underline;
-  margin: 1rem 0;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 24px;
+	text-align: justify;
+	color: $color_gray_3;
+	text-decoration: underline;
+	margin: 1rem 0;
 
-  &:hover {
-    color: $color_blue;
-    transition: $transition;
-  }
+	&:hover {
+		color: $color_blue;
+		transition: $transition;
+	}
 }
 
 %section-title {
-  font-size: 2.618rem;
-  font-weight: 800;
-  line-height: 1.15em;
-  margin-bottom: 6rem;
-  text-align: center;
-  text-shadow: 1px 1px 12px rgb(0 0 0 / 40%);
+	font-size: 2.618rem;
+	font-weight: 800;
+	line-height: 1.15em;
+	margin-bottom: 6rem;
+	text-align: center;
 }
 
 %shape_wave {
-  background-color: $color_bg_secondary;
-  box-sizing: border-box;
-  clip-path: ellipse(150% 100% at 50% 0%);
-  display: block;
-  height: 75vh;
+	background-color: $color_bg_secondary;
+	box-sizing: border-box;
+	clip-path: ellipse(150% 100% at 50% 0%);
+	display: block;
+	height: 75vh;
 }
 
 %skills-icon-wrapper {
-  background: $color_gray_4;
-  color: $color_gray_1;
-  height: 64px;
-  width: 64px;
+	background: $color_gray_4;
+	color: $color_gray_1;
+	height: 64px;
+	width: 64px;
 }
 
 %text-shadow {
-  text-shadow: 1px 1px 2px rgb(0 0 0 / 36%);
+	text-shadow: 1px 1px 2px rgb(0 0 0 / 36%);
+}
+
+%text-shadow-light {
+	text-shadow: 1px 1px 12px rgb(255 255 255 / 40%);
+}
+
+%text-shadow-dark {
+	text-shadow: 1px 1px 12px rgb(0 0 0 / 40%);
 }

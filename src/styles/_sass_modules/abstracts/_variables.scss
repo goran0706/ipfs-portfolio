@@ -1,29 +1,29 @@
 // colors
 $color_blue: #007ced;
 $color_blue_hover: #108dff;
-$color_gray_1: #171717;
+$color_gray_1: #070707;
 $color_gray_2: #444444;
 $color_gray_3: #a8a8a8;
-$color_gray_4: #dbdbdb;
+$color_gray_4: #f3f2f1;
 
 // color bg
-$color_bg_primary: #171717;
-$color_bg_secondary: #f5f5f5;
+$color_bg_primary: #070707;
+$color_bg_secondary: #ffffff;
 
 // color text
-$color_text_primary: #f5f5f5;
+$color_text_primary: #ffffff;
 $color_text_secondary: #a8a8a8;
 
 // color gradients
 $color_x_gradient_dark: linear-gradient(
-  90deg,
-  rgba(34, 34, 34, 1) 0%,
-  rgba(245, 245, 245, 1) 100%
+	90deg,
+	rgba(34, 34, 34, 1) 0%,
+	rgba(245, 245, 245, 1) 100%
 );
 $color_y_gradient_dark: linear-gradient(
-  180deg,
-  rgba(34, 34, 34, 1) 98%,
-  rgba(245, 245, 245, 1) 98%
+	180deg,
+	rgba(34, 34, 34, 1) 98%,
+	rgba(245, 245, 245, 1) 98%
 );
 
 // transitions

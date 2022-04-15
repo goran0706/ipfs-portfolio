@@ -2,63 +2,83 @@
 
 html,
 body {
-  background-color: $color_text_primary;
-  font-family: "Inter", sans-serif;
-  margin: 0;
-  padding: 0;
+	background-color: $color_text_primary;
+	font-family: "Inter", sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	scrollbar-width: thin;
+	scrollbar-color: $color_blue $color_gray_1;
+
+	&::-webkit-scrollbar {
+		width: 12px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: $color_gray_1;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $color_blue;
+		border-radius: 20px;
+		border: 3px solid $color_gray_1;
+	}
 }
 
 img,
 svg {
-  pointer-events: none;
+	pointer-events: none;
 }
 
 .container {
-  @include container(80rem);
+	@include container(80rem);
 }
 
 .section {
-  height: 95vh;
+	height: 95vh;
 
-  &--padding {
-    padding: 80px 0;
-  }
+	&--padding {
+		padding: 80px 0;
+	}
 
-  &--margin {
-    padding: 80px 0;
-  }
+	&--margin {
+		padding: 80px 0;
+	}
 
-  &--wave {
-    @extend %shape_wave;
-  }
+	&--wave {
+		@extend %shape_wave;
+	}
 
-  &--dark {
-    background-color: $color_bg_primary;
-  }
+	&--dark {
+		background-color: $color_bg_primary;
+	}
 
-  &--light {
-    background-color: $color_bg_secondary;
-  }
+	&--light {
+		background-color: $color_bg_secondary;
+	}
 }
 
 .sticky-inner-wrapper {
-  background-color: $color_bg_primary;
+	background-color: $color_bg_primary;
 }
 
 .active {
-  color: $color_blue;
+	color: $color_blue;
 }
 
 .view-more {
-  @include flex-container(row, center, center);
-  margin: 4rem 0;
+	@include flex-container(row, center, center);
+	margin: 4rem 0;
+}
+
+.required {
+	color: red;
 }

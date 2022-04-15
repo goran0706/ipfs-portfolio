@@ -1,3 +1,4 @@
+import android from "../assets/skills/android.svg";
 import angular from "../assets/skills/angular.png";
 import blockchain from "../assets/skills/blockchain.svg";
 import cucumber from "../assets/skills/cucumber.svg";
@@ -6,6 +7,7 @@ import ethereum from "../assets/header/ethereum.svg";
 import figma from "../assets/skills/figma.svg";
 import git from "../assets/skills/git.svg";
 import hero from "../assets/header/hero-img.avif";
+import java from "../assets/skills/java.svg";
 import mongo from "../assets/skills/mongoDb.svg";
 import nextjs from "../assets/skills/nextjs.svg";
 import nft from "../assets/header/NFT.svg";
@@ -20,24 +22,26 @@ import solidity from "../assets/header/solidity.svg";
 import web3 from "../assets/header/web3.svg";
 
 export const images = {
-  angular,
-  blockchain,
-  cucumber,
-  eth,
-  ethereum,
-  figma,
-  git,
-  hero,
-  mongo,
-  nextjs,
-  nft,
-  nodejs,
-  portfolio,
-  psql,
-  react,
-  ruby,
-  selenium,
-  sol,
-  solidity,
-  web3,
+	android,
+	angular,
+	blockchain,
+	cucumber,
+	eth,
+	ethereum,
+	figma,
+	git,
+	hero,
+	java,
+	mongo,
+	nextjs,
+	nft,
+	nodejs,
+	portfolio,
+	psql,
+	react,
+	ruby,
+	selenium,
+	sol,
+	solidity,
+	web3,
 };

@@ -1,58 +1,64 @@
 @mixin container($width: 80rem) {
-  margin: 0 auto;
-  width: $width;
+	margin: 0 auto;
+	width: $width;
 }
 
 @mixin flex-container(
-  $direction: row,
-  $spacing: space-between,
-  $alignment: center,
-  $gap: 0rem
+	$direction: row,
+	$spacing: space-between,
+	$alignment: center,
+	$gap: 0rem
 ) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $spacing;
-  align-items: $alignment;
-  gap: $gap;
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $spacing;
+	align-items: $alignment;
+	gap: $gap;
 }
 
 @mixin grid-container(
-  $cols: 4,
-  $rows: auto,
-  $colWidth: 1fr,
-  $rowWidth: 1fr,
-  $colGap: 1rem,
-  $rowGap: 1rem
+	$cols: 4,
+	$rows: auto,
+	$colWidth: 1fr,
+	$rowWidth: 1fr,
+	$colGap: 1rem,
+	$rowGap: 1rem
 ) {
-  display: grid;
-  grid-template-rows: repeat($rows, $rowWidth);
-  grid-template-columns: repeat($cols, $colWidth);
-  grid-row-gap: $rowGap;
-  grid-column-gap: $colGap;
-  justify-items: stretch;
-  align-items: stretch;
+	display: grid;
+	grid-template-rows: repeat($rows, $rowWidth);
+	grid-template-columns: repeat($cols, $colWidth);
+	grid-row-gap: $rowGap;
+	grid-column-gap: $colGap;
+	justify-items: stretch;
+	align-items: stretch;
 }
 
 @mixin media-title($color) {
-  color: $color;
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 32px;
+	color: $color;
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 32px;
 }
 
-@mixin media-description($color: $color_text_primary, $textAlign: justify) {
-  color: $color;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 26px;
-  text-align: $textAlign;
-  text-align: left;
-  text-shadow: 1px 1px 3px rgb(0 0 0 / 22%);
+@mixin media-subtitle($color: $color_text_primary, $textAlign: left) {
+	color: $color;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 26px;
+	text-align: $textAlign;
+}
+
+@mixin media-description($color: $color_text_primary, $textAlign: left) {
+	color: $color;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 26px;
+	text-align: $textAlign;
 }
 
 @mixin svg($color: $color_blue, $w: 48px, $h: 48px) {
-  color: $color;
-  height: $w;
-  transition: $transition;
-  width: $h;
+	color: $color;
+	height: $w;
+	transition: $transition;
+	width: $h;
 }

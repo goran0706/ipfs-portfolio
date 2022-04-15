@@ -1,50 +1,58 @@
 #skills {
-  background-color: $color_bg_secondary;
+	background-color: $color_bg_secondary;
 }
 
 .skills {
-  background-color: $color_bg_secondary;
+	background-color: $color_bg_secondary;
 
-  &__title {
-    @extend %section-title;
-  }
+	&__title {
+		@extend %section-title;
+		@extend %text-shadow-dark;
+	}
 
-  &__wrapper {
-    @include flex-container();
-    margin-bottom: 3rem;
-  }
+	&__wrapper {
+		@include flex-container();
+		margin-bottom: 2rem;
+	}
 
-  &__icons {
-    @include flex-container(row, flex-start, center, 3rem);
-    flex: 1;
+	&__icons {
+		@include flex-container(row, flex-start, center, 2rem);
+		flex: 1;
 
-    span {
-      @extend %border-radius-circle;
-      @extend %skills-icon-wrapper;
-      @include flex-container(row, center, center);
-    }
-  }
+		span {
+			@extend %border-radius-circle;
+			@extend %skills-icon-wrapper;
+			@include flex-container(row, center, center);
+		}
+	}
 }
 
 .experience {
-  @include flex-container(row, flex-start, center, 1rem);
-  flex: 1;
+	@include flex-container(row, flex-start, stretch, 1rem);
+	flex: 1;
 
-  &__icon-wrapper {
-    @extend %border-radius-small;
-    @extend %skills-icon-wrapper;
-    @include flex-container(row, center, center);
-  }
+	&__icon-wrapper {
+		@extend %border-radius-small;
+		@extend %skills-icon-wrapper;
+		@include flex-container(row, center, center);
+		margin-top: 7px;
+		font-weight: bold;
+	}
 
-  &__content {
-    @include flex-container(column, flex-start, flex-start, 1rem);
-  }
+	&__content {
+		@include flex-container(column, flex-start, flex-start);
+		flex: 1;
+	}
 
-  &__title {
-    @include media-title($color_gray_1);
-  }
+	&__title {
+		@include media-title($color_gray_1);
+	}
 
-  &__description {
-    @include media-description($color_gray_2);
-  }
+	&__description {
+		@include media-subtitle($color_gray_2);
+	}
+
+	&__description {
+		@include media-description($color_blue);
+	}
 }

@@ -1,27 +1,29 @@
 .contact {
-  &__title {
-    @extend %section-title;
-    color: $color_text_primary;
-  }
+	&__title {
+		@extend %section-title;
+		@extend %text-shadow-light;
+		color: $color_text_primary;
+	}
 
-  &__wrapper {
-    @include flex-container(row, center, flex-start, 4rem);
-    width: 100%;
-  }
+	&__wrapper {
+		@include flex-container(row, center, flex-start, 4rem);
+		width: 100%;
+	}
 
-  &__content {
-    @include flex-container(column, flex-start, flex-start);
-  }
+	&__content {
+		@include flex-container(column, flex-start, flex-start);
+	}
 
-  &__subtitle {
-    @include media-title($color_text_primary);
-  }
+	&__subtitle {
+		@include media-title($color_text_primary);
+		margin-bottom: 1rem;
+	}
 
-  &__text {
-    @include media-description($color_text_secondary);
-  }
+	&__text {
+		@include media-description($color_text_secondary);
+	}
 
-  &__link {
-    @extend %styled-link;
-  }
+	&__link {
+		@extend %styled-link;
+	}
 }
