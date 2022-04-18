@@ -1,3 +1,4 @@
 export const data = {
-  title: "Portfolio",
+	title: 'Portfolio',
+	navigateTop: 'Back to top',
 };

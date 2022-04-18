@@ -1,0 +1,109 @@
+.header {
+	@include flex-container(column, stretch, stretch);
+
+	.banner {
+		@include flex-container(column, flex-start, flex-start, 4rem);
+		margin-top: 5rem;
+
+		@include for-tablet-landscape-up {
+			@include flex-container(row, space-between, center);
+		}
+
+		&__content {
+			@include flex-container(column, center, flex-start);
+			width: 100%;
+			row-gap: 1rem;
+			z-index: 1;
+		}
+
+		&__title {
+			color: $color_text_primary;
+			font-size: 3.5rem;
+			font-weight: 900;
+			line-height: 1.1em;
+			margin: 0;
+
+			@include for-phone-only {
+				font-size: 2rem;
+			}
+		}
+
+		&__description {
+			@extend %text-shadow;
+			color: $color_text_primary;
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 30px;
+			max-width: 640px;
+
+			@include for-phone-only {
+				font-size: 1rem;
+				line-height: 24px;
+			}
+		}
+
+		&__buttons {
+			@include flex-container();
+			gap: 1rem;
+			margin: 2rem 0 0.5rem;
+			flex-wrap: wrap;
+		}
+
+		&__img {
+			@extend %border-radius-circle;
+			@extend %box-shadow-hero;
+			@include flex-container(row, center, center);
+			border: 3px solid $color_blue;
+			flex-shrink: 0;
+			height: 300px;
+			margin: 0 auto;
+			overflow: hidden;
+			position: relative;
+			width: 300px;
+
+			span {
+				color: $color_text_primary;
+			}
+
+			@include for-phone-only {
+				height: 200px;
+				width: 200px;
+			}
+
+			@include for-tablet-portrait-up {
+				height: 250px;
+				width: 250px;
+			}
+
+			@include for-tablet-landscape-up {
+				height: 300px;
+				width: 300px;
+			}
+
+			@include for-desktop-up {
+				height: 400px;
+				width: 400px;
+			}
+
+			@include for-big-desktop-up {
+				height: 450px;
+				width: 450px;
+			}
+		}
+	}
+
+	&__shadowed-text {
+		@include flex-container(row, flex-start, center);
+		margin-top: 3rem;
+		margin-left: -1rem;
+
+		span {
+			color: $color_text_primary;
+			filter: brightness(0.2);
+		}
+
+		@include for-phone-only {
+			margin-bottom: 3rem;
+		}
+	}
+}

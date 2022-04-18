@@ -39,25 +39,16 @@
 	}
 }
 
-%section-title {
-	font-size: 2.618rem;
-	font-weight: 800;
-	line-height: 1.15em;
-	margin-bottom: 6rem;
-	text-align: center;
-}
-
 %shape_wave {
 	background-color: $color_bg_secondary;
 	box-sizing: border-box;
 	clip-path: ellipse(150% 100% at 50% 0%);
 	display: block;
-	height: 75vh;
 }
 
 %skills-icon-wrapper {
-	background: $color_gray_4;
-	color: $color_gray_1;
+	background: $color_gray_3;
+	color: $color_text_secondary;
 	height: 64px;
 	width: 64px;
 }
@@ -67,9 +58,9 @@
 }
 
 %text-shadow-light {
-	text-shadow: 1px 1px 12px rgb(255 255 255 / 40%);
+	text-shadow: 1px 1px 12px rgb(255 255 255 / 30%);
 }
 
 %text-shadow-dark {
-	text-shadow: 1px 1px 12px rgb(0 0 0 / 40%);
+	text-shadow: 1px 1px 12px rgb(0 0 0 / 30%);
 }

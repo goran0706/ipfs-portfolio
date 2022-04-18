@@ -1,0 +1,46 @@
+.navbar {
+	@include flex-container();
+	color: $color_text_primary;
+	overflow: hidden;
+	padding: 20px 0;
+
+	.logo {
+		@include flex-container(row, center, center, 0.5rem);
+		.stylish {
+			font-family: monospace;
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		svg {
+			@include svg($color_blue);
+		}
+	}
+
+	&__list {
+		@include flex-container(null, null, null, 2rem);
+		@extend %unstyled-list;
+		display: none;
+
+		@include for-tablet-landscape-up {
+			display: flex;
+		}
+	}
+
+	&__item {
+		color: $color_text_primary;
+		font-weight: bold;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: $transition;
+
+		&:hover {
+			color: lighten($color_blue, 15%);
+			cursor: pointer;
+		}
+	}
+}

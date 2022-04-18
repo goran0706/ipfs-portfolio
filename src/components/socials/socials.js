@@ -1,20 +1,23 @@
-import { socials } from "./socials.data";
-import { Link } from "..";
+import { Link } from '..';
+import { socials } from './socials.data';
 
 export default function Socials() {
-  return (
-    <div className="socials__list">
-      {socials.map(({ path, icon }, i) => (
-        <Link
-          key={i}
-          path={path}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="socials__item"
-        >
-          {icon}
-        </Link>
-      ))}
-    </div>
-  );
+	return (
+		<nav aria-label='social'>
+			<ul className='socials__list' aria-label='socials'>
+				{socials.map(({ path, label, icon }, i) => (
+					<li key={i}>
+						<Link
+							aria-label={label}
+							className='socials__item'
+							path={path}
+							rel='noopener noreferrer'
+							target='_blank'>
+							{icon}
+						</Link>
+					</li>
+				))}
+			</ul>
+		</nav>
+	);
 }

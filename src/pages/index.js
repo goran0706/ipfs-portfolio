@@ -1,15 +1,13 @@
-import { Layout, Footer } from "../components";
-import { Header, About, Portfolio, Skills, Contact } from "../sections";
+import { Layout } from '../components';
+import { About, Portfolio, Skills, Contact } from '../containers';
 
 export default function Home() {
-  return (
-    <Layout>
-      <Header />
-      <About />
-      <Portfolio />
-      <Skills />
-      <Contact />
-      <Footer />
-    </Layout>
-  );
+	return (
+		<Layout>
+			<About />
+			<Portfolio />
+			<Skills />
+			<Contact />
+		</Layout>
+	);
 }

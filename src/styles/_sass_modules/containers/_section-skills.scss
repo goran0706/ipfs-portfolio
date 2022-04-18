@@ -6,13 +6,19 @@
 	background-color: $color_bg_secondary;
 
 	&__title {
-		@extend %section-title;
+		@include section-title($color_text_secondary);
 		@extend %text-shadow-dark;
 	}
 
 	&__wrapper {
 		@include flex-container();
+		flex-wrap: wrap-reverse;
+		gap: 1rem;
 		margin-bottom: 2rem;
+
+		@include for-phone-only {
+			margin-bottom: 4rem;
+		}
 	}
 
 	&__icons {
@@ -45,14 +51,14 @@
 	}
 
 	&__title {
-		@include media-title($color_gray_1);
+		@include media-title(darken($color_blue, 15%));
 	}
 
 	&__description {
-		@include media-subtitle($color_gray_2);
+		@include media-subtitle($color_text_secondary);
 	}
 
 	&__description {
-		@include media-description($color_blue);
+		@include media-description($color_text_secondary, justify);
 	}
 }

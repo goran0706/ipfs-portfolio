@@ -1,28 +1,31 @@
 .socials__list {
-  @include flex-container();
-  gap: 0.5rem;
+	@include flex-container();
+	flex-wrap: wrap;
+	gap: 0.5rem;
 
-  .socials__item {
-    @extend %border-radius-small;
-    @include flex-container(row, center, center);
-    background-color: $color_gray_2;
-    height: 32px;
-    transition: $transition;
-    width: 32px;
+	.socials__item {
+		@extend %border-radius-small;
+		@include flex-container(row, center, center);
+		background-color: $color_gray_2;
+		height: 32px;
+		opacity: 0.4;
+		transition: $transition;
+		width: 32px;
 
-    svg {
-      @include svg($color_gray_1, 18px, 18px);
-    }
+		svg {
+			@include svg($color_text_primary, 1rem, 1rem);
+		}
 
-    &:hover {
-      @extend %box-shadow;
-      background-color: $color_text_primary;
-      cursor: pointer;
-      transition: $transition;
+		&:hover {
+			@extend %box-shadow;
+			background-color: $color_text_primary;
+			cursor: pointer;
+			transition: $transition;
+			opacity: 1;
 
-      svg {
-        @include svg($color_blue, 18px, 18px);
-      }
-    }
-  }
+			svg {
+				@include svg($color_blue, 1rem, 1rem);
+			}
+		}
+	}
 }

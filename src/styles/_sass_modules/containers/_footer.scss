@@ -1,0 +1,36 @@
+.footer {
+	@include flex-container(row, space-between, center);
+	background-color: $color_bg_primary;
+	height: 5rem;
+
+	.container {
+		@include flex-container(row, space-between, center);
+		width: 100%;
+	}
+
+	&__title {
+		color: $color_text_primary;
+		font-size: 1rem;
+		font-weight: 500;
+		line-height: 24px;
+		text-align: center;
+	}
+
+	&__icon {
+		@include flex-container(row, center, center, 1rem);
+		color: $color_text_primary;
+
+		svg {
+			@include svg($color_text_primary, 1rem, 1rem);
+		}
+
+		&:hover {
+			cursor: pointer;
+
+			svg {
+				@include svg($color_text_primary, 1rem, 1rem);
+				transform: translateY(-5px);
+			}
+		}
+	}
+}

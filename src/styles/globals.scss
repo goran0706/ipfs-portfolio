@@ -1,11 +1,14 @@
-@import "./_sass_modules/main.scss";
+@import './_sass_modules/main.scss';
 
 html,
 body {
+	-moz-osx-font-smoothing: grayscale !important;
+	-webkit-font-smoothing: antialiased !important;
 	background-color: $color_text_primary;
-	font-family: "Inter", sans-serif;
+	font-family: 'Inter', sans-serif;
 	margin: 0;
 	padding: 0;
+	text-rendering: optimizeLegibility !important;
 }
 
 a {
@@ -29,7 +32,6 @@ a {
 	&::-webkit-scrollbar-thumb {
 		background-color: $color_blue;
 		border-radius: 20px;
-		border: 3px solid $color_gray_1;
 	}
 }
 
@@ -39,12 +41,10 @@ svg {
 }
 
 .container {
-	@include container(80rem);
+	@include container();
 }
 
 .section {
-	height: 95vh;
-
 	&--padding {
 		padding: 80px 0;
 	}
@@ -52,26 +52,15 @@ svg {
 	&--margin {
 		padding: 80px 0;
 	}
-
-	&--wave {
-		@extend %shape_wave;
-	}
-
-	&--dark {
-		background-color: $color_bg_primary;
-	}
-
-	&--light {
-		background-color: $color_bg_secondary;
-	}
 }
 
 .sticky-inner-wrapper {
 	background-color: $color_bg_primary;
 }
 
-.active {
-	color: $color_blue;
+.active,
+.required {
+	color: lighten($color_blue, 15%);
 }
 
 .view-more {
@@ -79,6 +68,14 @@ svg {
 	margin: 4rem 0;
 }
 
-.required {
-	color: red;
+.waves {
+	@extend %shape_wave;
+}
+
+.bg-dark {
+	background-color: $color_bg_primary;
+}
+
+.bg-light {
+	background-color: $color_bg_secondary;
 }

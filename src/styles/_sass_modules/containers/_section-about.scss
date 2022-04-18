@@ -1,0 +1,37 @@
+.about {
+	&__title {
+		@include section-title($color_text_secondary);
+		@extend %text-shadow-dark;
+	}
+
+	&__features {
+		@include grid-container(2, 3, 1fr, 1fr, 3rem, 3rem);
+
+		@include for-phone-only {
+			@include grid-container(1, 3, 1fr, 1fr, 2rem, 2rem);
+		}
+	}
+
+	&__item {
+		@include flex-container(row, flex-start, flex-start, 1rem);
+
+		&-title {
+			@include media-title(darken($color_blue, 15%));
+		}
+
+		&-description {
+			@include media-description($color_text_secondary, justify);
+			@include for-desktop-up {
+				width: 80%;
+			}
+		}
+
+		&-icon {
+			margin-top: 9px;
+
+			svg {
+				@include svg();
+			}
+		}
+	}
+}
