@@ -21,9 +21,6 @@
 
 		&-description {
 			@include media-description($color_text_secondary, justify);
-			@include for-desktop-up {
-				width: 80%;
-			}
 		}
 
 		&-icon {
@@ -33,5 +30,9 @@
 				@include svg();
 			}
 		}
+	}
+
+	&__item:last-of-type span {
+		margin-top: 0;
 	}
 }

@@ -4,4 +4,5 @@ export { default as Link } from './link';
 export { default as Logo } from './logo';
 export { default as Navbar } from './navbar/navbar';
 export { default as Particles } from './particles';
+export { default as SEO } from './seo';
 export { default as Socials } from './socials/socials';

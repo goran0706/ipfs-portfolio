@@ -25,11 +25,8 @@ export default function Header() {
 				<div className='container inner-wrapper'>
 					<div className='banner'>
 						<div className='banner__content'>
-							<h1 className='banner__title'>
-								{titlePartOne}
-								<br />
-								{titlePartTwo}
-							</h1>
+							<h1 className='banner__title'>{titlePartOne}</h1>
+							<h1 className='banner__title'>{titlePartTwo}</h1>
 							<p className='banner__description'>
 								{descPartOne}
 								<br />
