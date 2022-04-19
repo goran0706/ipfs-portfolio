@@ -4,6 +4,8 @@ export default function Particle() {
 	return (
 		<Particles
 			id='tsparticles'
+			width='0xp'
+			height='0px'
 			options={{
 				fpsLimit: 120,
 				interactivity: {

@@ -6,7 +6,7 @@ const { title, badgeLabels, projects, btnViewMore } = data;
 
 export default function Portfolio() {
 	return (
-		<section className='section waves section--padding bg-dark' id='portfolio'>
+		<section className='section section--padding bg-dark waves' id='portfolio'>
 			<div className='portfolio container'>
 				<h2 className='portfolio__title'>{title}</h2>
 				<div className='portfolio__badges'>

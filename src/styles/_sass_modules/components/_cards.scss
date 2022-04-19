@@ -15,9 +15,8 @@
 	&__figure {
 		border-top-left-radius: 15px;
 		border-top-right-radius: 15px;
-		overflow: hidden;
-
 		color: $color_text_primary;
+		overflow: hidden;
 	}
 
 	&__image {
@@ -59,10 +58,7 @@
 		@include flex-container(row, center, center);
 		height: 100%;
 		width: 100%;
-
-		svg {
-			color: $color_text_primary;
-		}
+		color: $color_text_primary;
 
 		&:hover {
 			background-color: $color_blue;
