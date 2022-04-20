@@ -46,7 +46,7 @@
 	$rowGap: 1rem
 ) {
 	display: grid;
-	grid-template-columns: repeat($cols, $colWidth);
+	grid-template-columns: repeat($cols, minmax(0, $colWidth));
 	grid-template-rows: auto;
 	grid-column-gap: $colGap;
 	grid-row-gap: $rowGap;

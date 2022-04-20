@@ -33,5 +33,6 @@ export const data = {
 			subtitle: 'UI/UX',
 		},
 	],
-	btnViewMore: 'View More',
+	learnMore: 'Learn More',
+	viewMore: 'View More',
 };

@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaAngleRight } from 'react-icons/fa';
 import { data } from './portfolio.data';
 
-const { title, badgeLabels, projects, btnViewMore } = data;
+const { title, badgeLabels, projects, learnMore, viewMore } = data;
 
 export default function Portfolio() {
 	return (
@@ -38,7 +38,8 @@ export default function Portfolio() {
 							</div>
 							<div className='card__footer'>
 								<div className='card__actions'>
-									<FaExternalLinkAlt />
+									<p>{learnMore}</p>
+									<FaAngleRight />
 								</div>
 							</div>
 						</div>
@@ -46,7 +47,7 @@ export default function Portfolio() {
 				</div>
 
 				<div className='view-more'>
-					<button className='btn--outline'>{btnViewMore}</button>
+					<button className='btn--outline'>{viewMore}</button>
 				</div>
 			</div>
 		</section>

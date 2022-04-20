@@ -3,9 +3,9 @@
 	@extend %box-shadow;
 	@include flex-container(column, flex-start, flex-start);
 	background: $color_y_gradient_dark;
-	height: 300px;
+	height: 100%;
 	overflow: hidden;
-	width: 300px;
+	width: 100%;
 
 	&__header {
 		background: $color_y_gradient_dark;
@@ -55,7 +55,7 @@
 	}
 
 	&__actions {
-		@include flex-container(row, center, center);
+		@include flex-container(row, center, center, 0.5rem);
 		height: 100%;
 		width: 100%;
 		color: $color_text_primary;
