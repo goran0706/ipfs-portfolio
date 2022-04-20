@@ -14,7 +14,9 @@
 
 	&__item {
 		@include flex-container(row, flex-start, flex-start, 1rem);
-		flex-wrap: wrap;
+		@include for-phone-only {
+			flex-wrap: wrap;
+		}
 
 		&-title {
 			@include media-title(darken($color_blue, 15%));
