@@ -1,5 +1,7 @@
 .contact__form {
 	@include flex-container(column, flex-start, flex-start, 1.275rem);
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
 
 	.input-group {

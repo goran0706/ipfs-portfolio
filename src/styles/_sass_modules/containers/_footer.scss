@@ -29,6 +29,8 @@
 
 			svg {
 				@include svg($color_text_primary, 1rem, 1rem);
+				-webkit-transform: translateY(-5px);
+				-ms-transform: translateY(-5px);
 				transform: translateY(-5px);
 			}
 		}

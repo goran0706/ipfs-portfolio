@@ -13,42 +13,33 @@ export const data = {
 		{
 			icon: <SiEthereum />,
 			title: 'Blockchain Developer',
-			description: `Junior Blockchain Developer who believes that have both the soft and technical skills needed, have worked and built Blockchain applications, including the Ethereum network. Writing secure Smart Contracts using Solidity programming language that run on the Ethereum blockchain and provide the unique advantage of freedom from fraud, downtime, third-party interference, or censorship. Leverage the latest cryptography techniques, best practices and smart contract patterns to bolster up cybersecurity of Blockchain systems. Participated in quality assurance, audits and the entire process of planing, implementing, testing, deploying and upgrading smart contracts. Optimizing and securing blockchain applications by integrating new tools and technologies and Documenting blockchain development processes and complying with best practices in data protection.`,
+			description: `A junior blockchain developer with prior experience developing web and blockchain apps who feels he possesses the technical abilities required to develop secure blockchain applications. Having a decent understanding of Solidity and expertise designing secure Smart Contracts that operate on the Ethereum blockchain and have the specific benefit of being immune to fraud, downtime, third-party intervention, and censorship. By leveraging the most recent cryptographic techniques, best practices, and smart contract patterns to improve the cybersecurity of the decentralized applications. Quality assurance, audits, and the full process of planning, creating, testing, deploying, and updating smart contracts were all part of my responsibilities. Optimizing and safeguarding blockchain applications via the incorporation of new tools and technologies, as well as documenting blockchain development processes and adhering to data protection best practices.`,
 		},
 		{
 			icon: <SiWeb3Dotjs />,
 			title: 'Web 3.0 Developer',
-			description: `Among many roles, a Blockchain developer writes smart contracts, which are programs developed for the Blockchain that runs on the Blockchain nodes.
-			As a Junior Blockchain Developer i have built and implemented application interfaces and features in accordance with Blockchain needs using the corresponding programming languages. Applications that leverage Blockchain technology run a slightly different, decentralized version on the internet called Web3. The decentralized application must correspond to the Web3 standards. Experienced with working on large decentralized and open-source projects. Experienced with building applications on the InterPlanetary File System - IPFS that is a distributed system for storing and accessing files, websites, applications, and data, which is also used to build decentralized applications, making it harder to censor content and speed up the web by fetching data from closest nodes.
+			description: `A Blockchain developer performs a variety of tasks, including writing smart contracts, which are Blockchain-based programs that execute on nodes. I have created and implemented application interfaces and features in line with Blockchain demands using the appropriate programming languages as a Junior Blockchain Developer. I've worked with Web3 technologies for the past two years. Web3 concept allows applications and other digital products to operate on Blockchain. Experienced working on small and large, decentralized and open-source initiatives, including building applications on the InterPlanetary File System - IPFS is a distributed system for storing and accessing files, websites, apps, and data. It is also used to develop decentralized applications, making it more difficult to restrict content and speeding up the web by retrieving data from the nearest nodes.
 			`,
 		},
 		{
 			icon: <SiSolidity />,
 			title: 'Solidity Developer',
-			description: `Junior Blockchain Developer experienced in writing Smart Contracts using Solidity as the preferred tool for smart contract development that are EVM compatible and run on the Ethereum network. Familiar with the following frameworks and libraries Truffle, Hardhat, OpenZeppelin Smart Contracts, Web3, Ethers.js, Mythx, Slither. Knowledgeable of Solidity best practices and design patterns: Behavioral Patterns; Security Patterns; Upgradeability Patterns. Having a basic knowledge of Smart Contract Weakness Classification and Test Cases, with experience in optimizing the smart contracts to bring down the gas costs, fixing and avoid smart contract security exploits as described by SWC Registry.`,
+			description: `Junior Blockchain Developer with expertise building EVM compliant smart contracts that operate on the Ethereum network using Solidity as the preferred tool for smart contract creation. Know how to use the following frameworks and libraries: Truffle, Hardhat, OpenZeppelin Smart Contracts, Web3, Ethers.js, Mythx, and Slither. Familiarity with the frameworks and libraries listed below Truffle, Hardhat, OpenZeppelin Smart Contracts, Web3, Ethers.js, Mythx, and Slither are a few examples. Understanding Solidity best practices and design patterns: Behavioral Patterns, Security Patterns, and Upgradeability Patterns are all examples of patterns. Having prior expertise optimizing smart contracts to reduce gas costs, as well as addressing and avoiding smart contract security flaws as detailed by SWC Registry.`,
 		},
 		{
 			icon: <SiJavascript />,
-			title: 'React/Angular/Node.js Developer',
-			description: `A JavaScript developer who has worked on implementing the front-end logic that defines the behavior of the visual elements of a web application.
-			Design and develop new front end applications for various platforms Help out with front end work on other applications (HTML/CSS/JS/Angular/React/Next/SASS).
-			Develop specifications and designs for complex applications or modifying/maintaining complex existing applications.
-			Perform code analysis, requirements analysis, identification of code metrics, system risk analysis and software reliability analysis.
-			Performance tuning, improvement, balancing, usability, automation.
-			Build reusable code and libraries for future use.
-			Ensure the technical feasibility of UI/UX designs.
-			Optimize applications for maximum speed and scalability.
-			`,
+			title: 'JavaScript Developer',
+			description: `A JavaScript developer who has worked on implementing the front-end logic that defines the behavior of the visual elements of a web application. Experience designing and building new front end apps for multiple platforms utilizing the technologies listed below (HTML | CSS | JS | Angular | React | Next | SASS). Develop complicated application specs and designs, or alter and manage complex existing applications. Ensure that UI/UX designs are technically feasible. Improve the performance and scalability of apps, optimizing applications for maximum speed and scalability. Developing reusable code, future-proof components and libraries.`,
 		},
 		{
 			icon: <MdDeveloperMode />,
 			title: 'Backend Developer',
-			description: `A JavaScript developer with experience in building secure REST-apis and micro-services written in Node.js. Responsible for developing new features or modifying/maintaining complex existing applications. Experienced with both centralized and decentralized applications (DApps). Design, develop, code, test, build, deploy, and debug new software or enhancements to existing software using server-side technologies, specifically Java and Node.JS. Including Solidity as a programming language for writing Smart Contracts, which can also be considered as a back-end.`,
+			description: `A JavaScript developer with expertise developing secure Node.js REST APIs and micro-services. Developing new features or modifying and maintaining complex existing applications. I've worked on both centralized and decentralized apps (DApps). Using server-side technologies, such as Java and Node.JS, to design, develop, code, test, create, deploy, and debug new software or upgrades to current software. Familiar with the following programming languages to write back-end related apps: Java, Node.js and Solidity. Solidity is a programming language that can be used to create Smart Contracts, which can be considered the backend of blockchain (DApps).`,
 		},
 		{
 			icon: <CgWebsite />,
 			title: 'Frontend Developer',
-			description: `Design, develop, code, test, build, deploy, and debug new software or enhancements to existing software using front-end technologies, specifically React/Next.js and Angular. Working with clients to develop the overall look and design of a website, and to produce, maintain and modify websites and user. interfaces by combining technologies and design to create inviting, easy-to-use websites for consumers`,
+			description: `Using front-end technologies, such as React/Next.js and Angular, to design, develop, code, test, create, deploy, and debug new software or changes to existing software. By integrating technologies and design to create welcoming, easy-to-use websites for customers or the decentralized communities. I have worked with clients to define the overall appearance and style of a websites, as well as to generate, manage, and alter websites and user interfaces. I've also worked with WordPress before.`,
 		},
 	],
 };

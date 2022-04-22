@@ -1,5 +1,5 @@
-import { Link } from './';
 import { FaCode } from 'react-icons/fa';
+import { Link } from './';
 
 export default function Logo({ path, children, ...rest }) {
 	return (

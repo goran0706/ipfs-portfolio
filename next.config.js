@@ -21,6 +21,11 @@ const nextConfig = {
 	compilerOptions: {
 		baseURL: 'src',
 	},
+	env: {
+		serviceID: 'service_c74wbwe',
+		templateID: 'portfolio_template',
+		publicKey: 'WCRQ9J3pIFMxE6-nG',
+	},
 };
 
 module.exports = nextConfig;

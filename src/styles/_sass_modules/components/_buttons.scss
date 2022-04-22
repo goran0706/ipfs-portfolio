@@ -2,27 +2,39 @@ button,
 .btn {
 	@extend %border-radius-small;
 	@include flex-container(row, center, center, 0.5rem);
+	-ms-flex-item-align: end;
 	align-self: flex-end;
 	background-color: darken($color_blue, 15%);
 	border: 2px solid darken($color_blue, 15%);
+	-webkit-box-shadow: 1px 1px 12px 0 rgb(0 0 0 / 27%);
 	box-shadow: 1px 1px 12px 0 rgb(0 0 0 / 27%);
 	color: $color_text_primary;
 	font-size: 1rem;
 	font-weight: 500;
 	padding: 16px 24px;
+	-webkit-transition: $transition;
+	-o-transition: $transition;
 	transition: $transition;
 
 	svg {
+		-webkit-transition: $transition;
+		-o-transition: $transition;
 		transition: $transition;
 	}
 
 	&:hover {
 		background: transparent;
 		cursor: pointer;
+		-webkit-transition: $transition;
+		-o-transition: $transition;
 		transition: $transition;
 
 		svg {
+			-webkit-transform: translateX(5px);
+			-ms-transform: translateX(5px);
 			transform: translateX(5px);
+			-webkit-transition: $transition;
+			-o-transition: $transition;
 			transition: $transition;
 		}
 	}
@@ -39,10 +51,16 @@ button,
 	&:hover {
 		background: $color_blue;
 		cursor: pointer;
+		-webkit-transition: $transition;
+		-o-transition: $transition;
 		transition: $transition;
 
 		svg {
+			-webkit-transform: translateX(5px);
+			-ms-transform: translateX(5px);
 			transform: translateX(5px);
+			-webkit-transition: $transition;
+			-o-transition: $transition;
 			transition: $transition;
 		}
 	}

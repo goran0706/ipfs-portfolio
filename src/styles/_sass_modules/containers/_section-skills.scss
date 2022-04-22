@@ -1,9 +1,12 @@
 #skills {
 	background-color: $color_bg_secondary;
+	overflow: hidden;
 }
 
 .skills {
 	background-color: $color_bg_secondary;
+	position: relative;
+	overflow: visible;
 
 	&__title {
 		@include section-title($color_text_secondary);
@@ -12,18 +15,21 @@
 
 	&__wrapper {
 		@include flex-container();
-		flex-wrap: wrap-reverse;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
 		gap: 1rem;
 		margin-bottom: 2rem;
 
 		@include for-phone-only {
-			margin-bottom: 4rem;
+			margin-bottom: 3rem;
 		}
 	}
 
 	&__icons {
-		@include flex-container(row, flex-start, center, 2rem);
-		flex: 1;
+		@include flex-container(row, flex-start, center, 1rem);
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		z-index: 1;
 
 		span {
 			@extend %border-radius-circle;
@@ -34,27 +40,30 @@
 }
 
 .experience {
-	@include flex-container(row, flex-start, stretch, 1rem);
-	flex: 1;
+	@include flex-container(row, flex-start, stretch, 2rem);
 
 	&__icon-wrapper {
 		@extend %border-radius-small;
 		@extend %skills-icon-wrapper;
 		@include flex-container(row, center, center);
-		margin-top: 7px;
+		color: darken($color_blue, 15%);
 		font-weight: bold;
+		margin-top: 7px;
 	}
 
 	&__content {
 		@include flex-container(column, flex-start, flex-start);
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
 		flex: 1;
+		z-index: 1;
 	}
 
 	&__title {
 		@include media-title(darken($color_blue, 15%));
 	}
 
-	&__description {
+	&__company {
 		@include media-subtitle($color_text_secondary);
 	}
 

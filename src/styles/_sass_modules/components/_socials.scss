@@ -1,7 +1,7 @@
 .socials__list {
-	@include flex-container();
+	@include flex-container(row, center, center, 0.5rem);
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	gap: 0.5rem;
 
 	.socials__item {
 		@extend %border-radius-small;
@@ -9,6 +9,8 @@
 		background-color: $color_gray_2;
 		height: 32px;
 		opacity: 0.4;
+		-webkit-transition: $transition;
+		-o-transition: $transition;
 		transition: $transition;
 		width: 32px;
 
@@ -20,6 +22,8 @@
 			@extend %box-shadow;
 			background-color: $color_text_primary;
 			cursor: pointer;
+			-webkit-transition: $transition;
+			-o-transition: $transition;
 			transition: $transition;
 			opacity: 1;
 

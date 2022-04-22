@@ -1,5 +1,6 @@
+export { default as Blob } from './blob';
 export { default as Footer } from './footer/footer';
-export { default as Layout } from './layout';
+export { default as Layout } from '../containers/layout';
 export { default as Link } from './link';
 export { default as Logo } from './logo';
 export { default as Navbar } from './navbar/navbar';

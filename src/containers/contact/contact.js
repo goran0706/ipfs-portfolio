@@ -1,10 +1,12 @@
+import { data } from './contact.data';
+import { Link } from '../../components';
+import { RiMailSendFill } from 'react-icons/ri';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-import { data } from './contact.data';
-import { RiMailSendFill } from 'react-icons/ri';
-import { Link } from '../../components';
-
+const serviceID = process.env.serviceID;
+const templateID = process.env.templateID;
+const publicKey = process.env.publicKey;
 const {
 	buttonText,
 	emailLink,
@@ -31,21 +33,14 @@ export default function Contact() {
 	const sendEmail = e => {
 		e.preventDefault();
 
-		emailjs
-			.sendForm(
-				'service_c74wbwe',
-				'portfolio_template',
-				e.target,
-				'WCRQ9J3pIFMxE6-nG'
-			)
-			.then(
-				result => {
-					console.log(result.text);
-				},
-				error => {
-					console.log(error.text);
-				}
-			);
+		emailjs.sendForm(serviceID, templateID, e.target, publicKey).then(
+			result => {
+				console.log(result.text);
+			},
+			error => {
+				console.log(error.text);
+			}
+		);
 
 		e.target.reset();
 	};

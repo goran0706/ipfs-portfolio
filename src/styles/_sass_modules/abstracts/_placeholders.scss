@@ -11,10 +11,12 @@
 }
 
 %box-shadow {
+	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 %box-shadow-hero {
+	-webkit-filter: drop-shadow(0px 0px 20px $color_blue);
 	filter: drop-shadow(0px 0px 20px $color_blue);
 }
 
@@ -35,13 +37,17 @@
 
 	&:hover {
 		color: $color_blue;
+		-webkit-transition: $transition;
+		-o-transition: $transition;
 		transition: $transition;
 	}
 }
 
 %shape_wave {
 	background-color: $color_bg_secondary;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	-webkit-clip-path: ellipse(150% 100% at 50% 0%);
 	clip-path: ellipse(150% 100% at 50% 0%);
 	display: block;
 }

@@ -1,8 +1,8 @@
 .navbar {
 	@include flex-container();
 	color: $color_text_primary;
-	overflow: hidden;
 	padding: 20px 0;
+	position: relative;
 
 	.logo {
 		@include flex-container(row, center, center, 0.5rem);
@@ -27,6 +27,8 @@
 		display: none;
 
 		@include for-tablet-landscape-up {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
 		}
 	}
@@ -36,11 +38,67 @@
 		font-weight: bold;
 		text-decoration: none;
 		text-transform: uppercase;
+		-webkit-transition: $transition;
+		-o-transition: $transition;
 		transition: $transition;
 
 		&:hover {
 			color: lighten($color_blue, 15%);
 			cursor: pointer;
+		}
+	}
+
+	&__menu {
+		display: block;
+
+		@include for-tablet-landscape-up {
+			display: none;
+		}
+
+		&-button {
+			@include flex-container(row, center, center);
+
+			svg {
+				@include svg($color_text_primary, 2rem, 2rem);
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		&-content {
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			background: rgba(7, 7, 7, 0.9);
+			position: absolute;
+			right: 0;
+			top: 88px;
+			width: 100%;
+		}
+
+		&-list {
+			@include flex-container(column, center, center, 1rem);
+			@extend %border-radius-small;
+			padding: 2rem;
+			text-align: center;
+		}
+
+		li {
+			width: 100%;
+		}
+
+		&-item {
+			@include flex-container(row, center, center);
+			height: 100%;
+			padding: 1rem 0;
+			width: 100%;
+
+			&:hover {
+				@extend %border-radius-small;
+				background-color: darken($color_blue, 15%);
+				cursor: pointer;
+			}
 		}
 	}
 }

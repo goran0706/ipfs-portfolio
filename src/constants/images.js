@@ -1,5 +1,5 @@
 import android from '../assets/skills/android.svg';
-import angular from '../assets/skills/angular.png';
+import angular from '../assets/skills/angular.svg';
 import blockchain from '../assets/skills/blockchain.svg';
 import cucumber from '../assets/skills/cucumber.svg';
 import eth from '../assets/skills/eth.svg';
@@ -10,16 +10,17 @@ import hero from '../assets/header/hero-img.avif';
 import java from '../assets/skills/java.svg';
 import mongo from '../assets/skills/mongoDb.svg';
 import nextjs from '../assets/skills/nextjs.svg';
-import nft from '../assets/header/NFT.svg';
+import nft from '../assets/header/nft.svg';
 import nodejs from '../assets/skills/nodejs.svg';
 import portfolio from '../assets/portfolio/portfolio.png';
 import psql from '../assets/skills/postgresql.svg';
 import react from '../assets/skills/react.svg';
-import ruby from '../assets/skills/ruby.png';
-import selenium from '../assets/skills/selenium.png';
+import ruby from '../assets/skills/ruby.svg';
+import selenium from '../assets/skills/selenium.svg';
 import sol from '../assets/skills/solidity.svg';
 import solidity from '../assets/header/solidity.svg';
 import web3 from '../assets/header/web3.svg';
+import wordpress from '../assets/skills/wordpress.svg';
 
 export const images = {
 	android,
@@ -44,4 +45,5 @@ export const images = {
 	sol,
 	solidity,
 	web3,
+	wordpress,
 };

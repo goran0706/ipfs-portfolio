@@ -13,26 +13,30 @@ export const data = {
 	],
 	projects: [
 		{
-			src: images.portfolio,
+			imgSrc: images.portfolio,
 			title: 'Portfolio',
 			subtitle: 'UI/UX',
+			href: 'https://icy-hall-8740.on.fleek.co/',
 		},
 		{
-			src: images.portfolio,
+			imgSrc: images.portfolio,
 			title: 'Portfolio',
 			subtitle: 'UI/UX',
+			href: 'https://icy-hall-8740.on.fleek.co/',
 		},
 		{
-			src: images.portfolio,
+			imgSrc: images.portfolio,
 			title: 'Portfolio',
 			subtitle: 'UI/UX',
+			href: 'https://icy-hall-8740.on.fleek.co/',
 		},
 		{
-			src: images.portfolio,
+			imgSrc: images.portfolio,
 			title: 'Portfolio',
 			subtitle: 'UI/UX',
+			href: 'https://icy-hall-8740.on.fleek.co/',
 		},
 	],
-	learnMore: 'Learn More',
+	explore: 'Explore',
 	viewMore: 'View More',
 };

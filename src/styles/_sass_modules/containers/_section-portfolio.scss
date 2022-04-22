@@ -6,6 +6,7 @@
 
 	&__badges {
 		@include flex-container(row, center, center, 2rem);
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 
 		@include for-phone-only {
@@ -21,6 +22,8 @@
 			font-weight: 700;
 			line-height: 24px;
 			padding: 6px 12px;
+			-webkit-transition: $transition;
+			-o-transition: $transition;
 			transition: $transition;
 			white-space: pre;
 
@@ -28,8 +31,15 @@
 				background-color: $color_blue;
 				color: $color_text_primary;
 				cursor: pointer;
+				-webkit-transition: $transition;
+				-o-transition: $transition;
 				transition: $transition;
 			}
+		}
+
+		.active {
+			background-color: darken($color_blue, 15%);
+			color: $color_text_primary;
 		}
 	}
 

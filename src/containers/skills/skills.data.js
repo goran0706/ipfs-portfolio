@@ -17,6 +17,7 @@ const {
 	ruby,
 	selenium,
 	sol,
+	wordpress,
 } = images;
 
 export const data = {
@@ -37,7 +38,7 @@ export const data = {
 			company: 'ITCrowd - a technology company',
 		},
 		{
-			icons: [figma, angular, react, nextjs],
+			icons: [figma, wordpress, angular, react, nextjs],
 			year: '2020',
 			jobTitle: 'Frontend Developer',
 			jobDesc: 'UI/UX Front-End Developer | HTML | CSS | Angular | React',

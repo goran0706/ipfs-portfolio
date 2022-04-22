@@ -1,6 +1,5 @@
 @mixin container() {
 	margin: 0 auto;
-	overflow-x: hidden;
 
 	@include for-phone-only {
 		padding: 0 1rem;
@@ -59,15 +58,15 @@
 	font-size: 2.618rem;
 	font-weight: 700;
 	line-height: 1.15em;
-	margin-bottom: 6rem;
+	margin-bottom: 4rem;
 	text-align: center;
 }
 
 @mixin media-title($color) {
 	color: $color;
-	font-size: 1.25rem;
-	font-weight: 700;
-	line-height: 32px;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 24px;
 }
 
 @mixin media-subtitle($color: $color_text_primary, $textAlign: left) {
@@ -82,7 +81,7 @@
 	color: $color;
 	font-size: 1rem;
 	font-weight: 300;
-	line-height: 26px;
+	line-height: 24px;
 	text-align: $textAlign;
 }
 
