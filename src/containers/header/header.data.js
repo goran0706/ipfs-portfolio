@@ -11,5 +11,5 @@ export const data = {
 	heroImg: images.hero,
 	btnText: 'Review CV',
 	cvLink:
-		'https://ipfs.io/ipfs/QmevZ99h5oqwNB2vDCPUMBZUcLWgqDXuviDdEheFV6MLjs/CV%20_%20Goran%20Gavrovski.pdf',
+		'https://ipfs.fleek.co/ipfs/QmevZ99h5oqwNB2vDCPUMBZUcLWgqDXuviDdEheFV6MLjs/CV%20_%20Goran%20Gavrovski.pdf',
 };
