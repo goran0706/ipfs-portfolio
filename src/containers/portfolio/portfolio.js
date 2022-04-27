@@ -18,7 +18,7 @@ export default function Portfolio() {
 		if (query === 'All') {
 			setFiltered(projects);
 		} else {
-			setFiltered(projects.filter(p => p.subtitle === query));
+			setFiltered(projects.filter(p => p.subtitle.includes(query)));
 		}
 	};
 

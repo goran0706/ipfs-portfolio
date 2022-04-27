@@ -1,60 +1,15 @@
 .blob {
-	position: absolute;
-	top: 0;
-	right: 0;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	background-color: $color_blue;
 	display: none;
-
-	svg {
-		fill: darken($color_blue, 15%);
-	}
-
-	-webkit-animation-name: ani-float;
-
-	animation-name: ani-float;
-	-webkit-animation-duration: 3s;
-	animation-duration: 3s;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-	-webkit-animation-timing-function: ease-in-out;
-	animation-timing-function: ease-in-out;
+	position: absolute;
+	right: 0;
+	top: 80px;
 
 	@include for-desktop-up {
 		display: block;
-		height: 130%;
-		width: 105%;
-	}
-
-	@include for-big-desktop-up {
-		width: 80%;
-	}
-}
-
-@-webkit-keyframes ani-float {
-	0% {
-		-webkit-transform: translate(0, 0px);
-		transform: translate(0, 0px);
-	}
-	50% {
-		-webkit-transform: translate(30px, 10px);
-		transform: translate(30px, 10px);
-	}
-	100% {
-		-webkit-transform: translate(0, -0px);
-		transform: translate(0, -0px);
-	}
-}
-
-@keyframes ani-float {
-	0% {
-		-webkit-transform: translate(0, 0px);
-		transform: translate(0, 0px);
-	}
-	50% {
-		-webkit-transform: translate(30px, 10px);
-		transform: translate(30px, 10px);
-	}
-	100% {
-		-webkit-transform: translate(0, -0px);
-		transform: translate(0, -0px);
+		height: 90%;
+		width: 50%;
 	}
 }

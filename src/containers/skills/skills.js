@@ -9,10 +9,11 @@ export default function Skills() {
 		<section className='section section--padding bg-dark' id='skills'>
 			<div className='skills container'>
 				<h2 className='skills__title'>{title}</h2>
-				<Blob />
 
 				{skills.map(({ icons, year, jobTitle, jobDesc, company }, i) => (
 					<div className='skills__wrapper' key={i}>
+						<div className='blob' />
+
 						<div className='experience'>
 							<span className='experience__icon-wrapper'>
 								<p>{year}</p>
