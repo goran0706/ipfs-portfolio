@@ -15,6 +15,7 @@ import nft from '../assets/header/nft.svg';
 import nodejs from '../assets/skills/nodejs.svg';
 import portfolio from '../assets/portfolio/portfolio.png';
 import psql from '../assets/skills/postgresql.svg';
+import randomQuoteGenerator from '../assets/portfolio/random-quote-generator.png';
 import react from '../assets/skills/react.svg';
 import ruby from '../assets/skills/ruby.svg';
 import selenium from '../assets/skills/selenium.svg';
@@ -33,6 +34,7 @@ export const images = {
 	figma,
 	git,
 	hero,
+	ipfsNotes,
 	java,
 	mongo,
 	nextjs,
@@ -40,6 +42,7 @@ export const images = {
 	nodejs,
 	portfolio,
 	psql,
+	randomQuoteGenerator,
 	react,
 	ruby,
 	selenium,
@@ -47,5 +50,4 @@ export const images = {
 	solidity,
 	web3,
 	wordpress,
-	ipfsNotes,
 };

@@ -25,6 +25,12 @@ export const data = {
 			subtitle: 'UI/UX, React JS, Web App, Web3 App, IPFS',
 			href: 'https://ipfs-notes.on.fleek.co/',
 		},
+		{
+			imgSrc: images.randomQuoteGenerator,
+			title: 'Random Quote Generator',
+			subtitle: 'UI/UX, React JS, Web App',
+			href: 'https://random-quote-generator-zeta-gold.vercel.app/',
+		},
 	],
 	explore: 'Explore',
 	viewMore: 'View More',
