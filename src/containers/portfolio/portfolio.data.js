@@ -20,6 +20,12 @@ export const data = {
 			href: 'https://portfolio-ipfs.on.fleek.co/',
 		},
 		{
+			imgSrc: images.ipfsEthStorage,
+			title: '0xStorage',
+			subtitle: 'Web3 App, React JS, Solidity, IPFS',
+			href: 'https://main--0xstorage.netlify.app/',
+		},
+		{
 			imgSrc: images.ipfsNotes,
 			title: 'IPFS-Notes',
 			subtitle: 'UI/UX, React JS, Web App, Web3 App, IPFS',

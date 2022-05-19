@@ -8,6 +8,7 @@ import figma from '../assets/skills/figma.svg';
 import git from '../assets/skills/git.svg';
 import hero from '../assets/header/hero-img.avif';
 import ipfsNotes from '../assets/portfolio/ipfs-notes.png';
+import ipfsEthStorage from '../assets/portfolio/ipfsEthStorage.png';
 import java from '../assets/skills/java.svg';
 import mongo from '../assets/skills/mongoDb.svg';
 import nextjs from '../assets/skills/nextjs.svg';
@@ -35,6 +36,7 @@ export const images = {
 	git,
 	hero,
 	ipfsNotes,
+	ipfsEthStorage,
 	java,
 	mongo,
 	nextjs,
