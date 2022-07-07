@@ -31,7 +31,7 @@ export default function SEO({ title, description, keywords, author, meta }) {
 				<meta
 					key={i}
 					name={Object.entries(item)[0][1]}
-					content={Object.entries(item)[0][1]}
+					content={Object.entries(item)[1][1]}
 				/>
 			))}
 		</Head>
